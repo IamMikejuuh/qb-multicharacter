@@ -79,7 +79,7 @@
 }
 
 .char-selected {
-    background-color: #dc143c;
+    background-color: #1b6ebb;
 }
 
 .disabled {
@@ -119,13 +119,13 @@
 
 #play {
     display: none;
-    background-color: #28a745;
+    background-color: #1b6ebb;
     border-radius: .3vh;
     transition: all 0.2s ease;
 }
 
 #play:hover {
-    background-color: #228a3a;
+    background-color: #155591;
 }
 
 #delete {
