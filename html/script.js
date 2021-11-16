@@ -13,7 +13,7 @@ $(document).ready(function (){
                 $(".welcomescreen").fadeIn(150);
                 qbMultiCharacters.resetAll();
 
-                var originalText = "Retrieving player data";
+                var originalText = "Ontvangen van speler data";
                 var loadingProgress = 0;
                 var loadingDots = 0;
                 $("#loading-text").html(originalText);
@@ -22,15 +22,15 @@ $(document).ready(function (){
                     loadingDots++;
                     loadingProgress++;
                     if (loadingProgress == 3) {
-                        originalText = "Validating player data"
+                        originalText = "Valideren van speler data"
                         $("#loading-text").html(originalText);
                     }
                     if (loadingProgress == 4) {
-                        originalText = "Retrieving characters"
+                        originalText = "Ontvangen van identiteiten"
                         $("#loading-text").html(originalText);
                     }
                     if (loadingProgress == 6) {
-                        originalText = "Validating characters"
+                        originalText = "Valideren van identiteiten"
                         $("#loading-text").html(originalText);
                     }
                     if(loadingDots == 4) {
@@ -44,7 +44,7 @@ $(document).ready(function (){
                     setTimeout(function(){
                         clearInterval(DotsInterval);
                         loadingProgress = 0;
-                        originalText = "Retrieving data";
+                        originalText = "Ontvangen van data";
                         $(".welcomescreen").fadeOut(150);
                         qbMultiCharacters.fadeInDown('.character-info', '20%', 400);
                         qbMultiCharacters.fadeInDown('.characters-list', '20%', 400);
